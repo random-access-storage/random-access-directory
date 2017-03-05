@@ -1,5 +1,7 @@
 # random-access-directory
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/juliangruber/random-access-directory.svg)](https://greenkeeper.io/)
+
 Store a bunch of [random-access-file](https://npmjs.org/package/random-access-file) instances in a common directory!
 
 ## Example
