@@ -19,3 +19,13 @@ var b = a('hyperdrive.txt')
 b.write(0, Buffer('you'), ...)
 // => /tmp/hyperdrive.txt
 ```
+
+## Installation
+
+```bash
+$ npm install random-access-directory
+```
+
+## License
+
+MIT
