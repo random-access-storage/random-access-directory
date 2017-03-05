@@ -1,0 +1,16 @@
+{
+  "name": "random-access-directory",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": "juliangruber/random-access-directory",
+  "scripts": {
+    "test": "prettier-standard-formatter *.js && tape test.js"
+  },
+  "devDependencies": {
+    "prettier-standard-formatter": "^0.222222222222222.333333333333333",
+    "tape": "^4.6.3"
+  },
+  "dependencies": {
+    "random-access-file": "^1.5.0"
+  }
+}
