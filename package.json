@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "repository": "juliangruber/random-access-directory",
+  "description": "Store a bunch of random-access-file instances in a common directory",
   "scripts": {
     "test": "prettier-standard-formatter *.js && tape test.js"
   },
