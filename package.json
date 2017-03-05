@@ -1,6 +1,6 @@
 {
   "name": "random-access-directory",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "repository": "juliangruber/random-access-directory",
   "description": "Store a bunch of random-access-file instances in a common directory",
