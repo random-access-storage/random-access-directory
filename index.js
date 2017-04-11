@@ -41,6 +41,12 @@ function createFactory (fn) {
       store.unlink(cb)
     }
 
+    Object.defineProperty(rad, 'length', {
+      get: function () {
+        return store.length
+      }
+    })
+
     return rad
   }
 

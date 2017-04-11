@@ -3,7 +3,7 @@ var test = require('tape')
 var fs = require('fs')
 
 test('rad', function (t) {
-  t.plan(6)
+  t.plan(7)
   var store = rad('/tmp/')
 
   var a = store('hypercore.txt')
@@ -14,6 +14,8 @@ test('rad', function (t) {
       t.error(err)
       t.deepEquals(buf, Buffer('hello'))
     })
+
+    t.equals(a.length, 5)
   })
 
   var b = a('hyperdrive.txt')
