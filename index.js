@@ -3,12 +3,16 @@ var join = require('path').join
 
 module.exports = createFactory
 
-function createFactory (fn) {
+function createFactory (fn, createRandomAccess) {
   if (typeof fn === 'string') {
     var dir = fn
     fn = function (name) {
-      return raf(join(dir, name))
+      return createRandomAccess(join(dir, name))
     }
+  }
+
+  if (typeof createRandomAccess !== 'function') {
+    createRandomAccess = raf
   }
 
   function createRad (name) {
